@@ -4,7 +4,8 @@
   "description": "dump crap to repo",
   "version": "0.0.1",
   "icons": {
-    "64": "icons/icon.png"
+    "16": "icons/favicon-16x16.png",
+    "32": "icons/favicon-32x32.png"
   },
   "background": {
     "scripts": [
@@ -14,7 +15,8 @@
   },
   "browser_action": {
     "default_icon": {
-      "64": "icons/icon.png"
+      "16": "icons/favicon-16x16.png",
+      "32": "icons/favicon-32x32.png"
     },
     // "default_popup": "browserAction/index.html",
     "default_title": "brainmark"

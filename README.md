@@ -9,3 +9,6 @@ install on firefox:
 in nightly:
   - open about:config and set xpinstall.signatures.required to false
   - click and drag zipped file to extensions page
+
+
+credit to https://favicon.io/emoji-favicons/brain/ for the icons
