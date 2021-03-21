@@ -14,6 +14,7 @@ var scrapePdfInput = () => {
 //   it ourselves from background_script.js.
 // - non default_popup popups don't have access to tab details.
 // - so we ask background_script.js to tell us the tab, so we can access its details.
+// this was helpful: https://stackoverflow.com/a/19758800
 var title;
 var tab;
 browser.runtime.sendMessage({}).then((response) => {
