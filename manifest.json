@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "brainmark",
+  "description": "dump crap to repo",
+  "version": "0.0.1",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "external/browser-polyfill.js",
+      "background_script.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    // "default_popup": "browserAction/index.html",
+    "default_title": "brainmark"
+  },
+  "options_ui": {
+    "page": "options/index.html"
+  },
+  "permissions": [
+    "downloads",
+    "tabs"
+  ]
+}

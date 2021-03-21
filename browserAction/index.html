@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" />
+    <script type="application/javascript" src="../external/browser-polyfill.js"></script>
+    <script type="application/javascript" src="../external/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <h1 id="header">bookmark page</h1>
+    <div id="options">
+      <div class="option">
+        <label for="url">url</label>
+        <input type="text" id="url">
+      </div>
+      <div class="option">
+        <label for="comment">comment</label>
+        <textarea id="comment"></textarea>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="scrape-pdf" name="scrape-pdf">
+        <label for="scrape-pdf">scrape pdf? (later)</label>
+      </div>
+    </div>
+    <div id="save-place"><button id="save-button" >save</button></div>
+    <script src="script.js"></script>
+  </body>
+</html>
