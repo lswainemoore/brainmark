@@ -25,5 +25,12 @@
   "permissions": [
     "downloads",
     "tabs"
-  ]
+  ],
+  "browser_specific_settings": {
+    // annoying: need this to install
+    // see: https://stackoverflow.com/a/62256098
+    "gecko": {
+      "id": "iwishididntneedtodo@this"
+    }
+  }
 }
