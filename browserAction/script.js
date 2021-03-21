@@ -29,19 +29,22 @@ var state = {
 
 var constructFileContent = () => {
   var time = new Date().toISOString();
+  var url = urlInput().value;
   var headers = [];
-  headers.push(`url: ${urlInput().value}`);
+  headers.push(`url: [${url}](${url})`);
   headers.push(`processed: ${time}`);
   if (scrapePdfInput().checked) {
     headers.push('pdf: TK');
   }
 
-  head = headers.join('\n');
+  head = headers.join('\n\n');
 
   var comment = commentInput().value;
   if (comment) {
     return `${head}
+
 -------
+
 ${comment}
 `;
   }
