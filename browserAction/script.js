@@ -67,7 +67,7 @@ document.getElementById('save-button').addEventListener('click', (e) => {
   var f = new File([content], '');  // what should i actually use this second param for?
   var objURL = URL.createObjectURL(f);
   browser.downloads.download({
-    filename: `${title.toLowerCase().replaceAll(' ', '-')}.md`,
+    filename: `${title.toLowerCase().replaceAll(' ', '-').replace(/[\W_]+/g,"-")}.md`,
     url: objURL,
     saveAs: true
   }).then((r) => {
